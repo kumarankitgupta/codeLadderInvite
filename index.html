@@ -1,4 +1,4 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,37 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Development & Placement Session by Ankit</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <style>
-        /* Custom Styles */
-        body, html {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: auto;
-            background-color: #f8f9fa; /* Correct background color */
-        }
-
-        .container {
+        /* Responsive Styles */
+        body {
+            background: #f8f9fa; /* Set background color */
+            color: #000; /* Default text color */
+            overflow: auto; /* Allow scrolling */
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
             padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%; /* Responsive width */
         }
 
         .content {
-            background: #ffffff; /* Content background remains white */
-            border: 1px solid #ddd;
-            padding: 20px;
+            animation: fadeIn 1s;
+            background: #ffffff; /* White content background */
+            border: 1px solid #ddd; /* Border around content */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
         }
 
         .content h1 {
             font-size: 24px;
+            color: #007bff; /* Header color */
         }
 
         .content p {
@@ -44,52 +45,59 @@
         }
 
         .btn {
-            color: #fff; /* White text color for button */
-            background-color: #007bff; /* Bootstrap primary color for button */
+            background-color: #e74c3c; /* Red button background */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #c0392b; /* Darker red on hover */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         /* Mobile Responsive Adjustments */
         @media (max-width: 576px) {
             .content h1 {
-                font-size: 20px;
-                margin-top: 10px;
+                font-size: 20px; /* Smaller header for mobile */
             }
 
             .content p {
-                font-size: 14px;
-            }
-
-            .content {
-                padding: 15px;
-                margin: 10px;
+                font-size: 14px; /* Smaller text for mobile */
             }
 
             .btn {
-                font-size: 14px;
-                padding: 10px 15px;
+                font-size: 14px; /* Smaller button text */
+                padding: 10px 15px; /* Smaller padding */
                 margin-top: 15px;
-            }
-
-            .container {
-                flex-direction: column; /* Adjust layout for smaller screens */
-                align-items: flex-start;
-                padding: 10px;
             }
         }
 
         /* Tablet Responsive Adjustments */
         @media (min-width: 577px) and (max-width: 768px) {
             .content h1 {
-                font-size: 22px;
+                font-size: 22px; /* Adjust header size */
             }
 
             .content p {
-                font-size: 15px;
+                font-size: 15px; /* Adjust paragraph size */
             }
 
             .btn {
-                font-size: 15px;
-                padding: 12px 18px;
+                font-size: 15px; /* Button size for tablets */
+                padding: 12px 18px; /* Button padding for tablets */
             }
         }
     </style>
@@ -105,7 +113,7 @@
             <p><strong>Speaker:</strong> Ankit Kumar Gupta</p>
             <p><strong>Designation:</strong> Software Engineer I</p>
             <p><strong>Company:</strong> Farmart Pvt. Ltd</p>
-            <a href="https://meet.google.com/jqf-pmnp-bqg" class="btn btn-primary mt-3">Join the Session</a>
+            <a href="https://meet.google.com/jqf-pmnp-bqg" class="btn">Join the Session</a>
         </div>
     </div>
 
